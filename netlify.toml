@@ -1,0 +1,34 @@
+[build]
+  publish = "public"
+  functions = "netlify/functions"
+
+[functions]
+  node_bundler = "esbuild"
+
+[functions."scheduled-trigger"]
+  schedule = "*/5 * * * *"
+
+[[redirects]]
+  from = "/api/config"
+  to = "/.netlify/functions/config"
+  status = 200
+
+[[redirects]]
+  from = "/api/status"
+  to = "/.netlify/functions/status"
+  status = 200
+
+[[redirects]]
+  from = "/api/universe"
+  to = "/.netlify/functions/universe"
+  status = 200
+
+[[redirects]]
+  from = "/api/history"
+  to = "/.netlify/functions/history"
+  status = 200
+
+[[redirects]]
+  from = "/api/scan"
+  to = "/.netlify/functions/manual-trigger"
+  status = 200

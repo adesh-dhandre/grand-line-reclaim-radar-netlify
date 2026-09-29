@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grand Line Reclaim Radar</title>
+  <meta name="description" content="Top 100 Binance Futures meaningful swing reclaim scanner." />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="fog fog-a"></div><div class="fog fog-b"></div><div class="map-grid"></div>
+  <main class="shell">
+    <header class="masthead">
+      <div class="brand">
+        <div class="skull">☠</div>
+        <div>
+          <div class="kicker">NEW WORLD MARKET ROUTE</div>
+          <h1>Grand Line <span>Reclaim Radar</span></h1>
+          <p>Top 100 Binance USDT perpetuals. Meaningful swing reclaim only.</p>
+        </div>
+      </div>
+      <div class="log-pose glass">
+        <div class="pose-ring"><div class="needle"></div><div class="pose-core"></div></div>
+        <div><div class="tiny">LOG POSE</div><strong id="scannerStatus">Loading</strong><div id="lastScan" class="mono dim">—</div></div>
+      </div>
+    </header>
+
+    <section class="route-bar glass">
+      <div class="route-item"><span class="tiny">TIMEFRAME</span><select id="interval"><option value="5m">5m</option><option value="15m">15m</option><option value="30m">30m</option><option value="1h" selected>1h</option><option value="2h">2h</option><option value="4h">4h</option></select></div>
+      <div class="route-item"><span class="tiny">CREW UNIVERSE</span><strong>TOP <span id="universeCount">100</span></strong></div>
+      <div class="route-item"><span class="tiny">DISCORD DEN-DEN</span><strong id="discordBadge">Checking</strong></div>
+      <div class="route-item grow"><span class="tiny">ROUTE STATUS</span><strong id="scanMessage">Waiting for scan...</strong></div>
+      <button id="scanBtn" class="scan-btn">SAIL & SCAN</button>
+    </section>
+
+    <section class="bounty-grid">
+      <article class="bounty parchment"><div class="wanted">WANTED</div><div class="bounty-label">LIVE RECLAIMS</div><div id="signalCount" class="bounty-number">0</div><div class="bounty-sub">latest closed candle only</div></article>
+      <article class="bounty parchment"><div class="wanted">WANTED</div><div class="bounty-label">LONG RECLAIMS</div><div id="longCount" class="bounty-number long">0</div><div class="bounty-sub">swing low swept + reclaimed</div></article>
+      <article class="bounty parchment"><div class="wanted">WANTED</div><div class="bounty-label">SHORT RECLAIMS</div><div id="shortCount" class="bounty-number short">0</div><div class="bounty-sub">swing high swept + reclaimed</div></article>
+      <article class="bounty parchment"><div class="wanted">WANTED</div><div class="bounty-label">AUTO ROUTE</div><div class="bounty-number">5m</div><div class="bounty-sub">all 100 pairs every cycle</div></article>
+    </section>
+
+    <section class="section-head"><div><div class="kicker">CURRENT TREASURE MARKS</div><h2>Reclaim Signals</h2></div><div class="rule-chip">FIRST BREAK ONLY · SAME-CANDLE RECLAIM</div></section>
+    <section id="signals" class="signals-grid"><div class="empty glass"><div class="compass">✦</div><h3>No reclaim signal loaded yet</h3><p>The radar only fires when the latest closed candle performs the reclaim.</p></div></section>
+
+    <section class="section-head second"><div><div class="kicker">BOUNTY BOARD</div><h2>Top 100 Volume Pairs</h2></div></section>
+    <section class="table-card glass"><table><thead><tr><th>#</th><th>Pair</th><th>Price</th><th>24h</th><th>Quote Volume</th></tr></thead><tbody id="universeBody"><tr><td colspan="5" class="loading">Loading Grand Line route...</td></tr></tbody></table></section>
+
+    <section class="logic glass"><div><div class="kicker">LOCKED STRATEGY</div><h3>Meaningful swing reclaim</h3></div><div class="logic-flow"><span>Meaningful swing</span><b>→</b><span>1 ATR departure</span><b>→</b><span>First sweep</span><b>→</b><span>Same candle reclaim</span><b>→</b><span>Discord</span></div></section>
+    <footer>No RSI. No extra confirmation candle. No reuse after a level’s first break.</footer>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>
